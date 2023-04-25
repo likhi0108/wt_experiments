@@ -1,0 +1,47 @@
+body{
+    margin:50;
+    border-style:solid ;
+    font-family:sans-serif;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TiXMIfvUREzy2fKlZ8SimZoW-OjaIUHfcw&usqp=CAU");
+}
+.forms
+{
+    height:
+    border:5px outset;
+    background-color:#B9F3FC;
+    text-align:left;
+    background-image: url('http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT7SFLXrPxygtD2wZpi84F5fD2OpdStuIFCVUjayXE5XLinim6CEvvtuI3hMmWny_SqxpMK-eMY-vcuRiPKmQ0');
+}
+h2
+{
+    text-align:center;
+}
+.tab
+{
+    border:0;
+    cellspacing:0;
+    cellpadding:5;
+    border:dotted;
+}
+.Nav
+{
+    text-align:center;
+    line-height:5;
+    background-color:#93C6E7;
+    margin-left: 50;
+}
+a:hover
+{
+    color:#B3005E;
+    display:block;
+}
+ul{
+    padding-left:60px;
+    width:180%;
+}
+ul li{
+    padding:5px;
+    margin-left:535px;
+    margin-right:10px;
+    color:black;
+}

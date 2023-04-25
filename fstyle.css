@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.img{
+    height:40px;
+    width:40px;
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-middle {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+nav .nav-middle a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+nav .nav-middle a.active {
+    color: #30AEB3;
+    position: relative;
+}
+
+nav .nav-middle a.active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #30AEB3;
+}
+
+nav .nav-middle a>i {
+    font-size: 25px;
+}
+
+nav .nav-right .profile,
+.container .left-panel .profile {
+    background: url('./images/dp.jpg');
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .nav-right a {
+    text-decoration: none;
+    color: #333;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: grid;
+    place-items: center;
+    margin-left: 1rem;
+}
+
+nav .nav-right a>i {
+    font-size: 18px;
+}
+
+#frnds_bar {
+    background-color: #30AEB3;
+    min-height: 400px;
+    margin-top: 20px;
+    color: #aaa;
+    padding: 8px;
+}
+
+#frnds_img {
+    width: 75px;
+    float: left;
+    margin: 10px;
+    border-radius: 80%;
+}
+
+#frnds {
+    clear: both;
+    font-size: 15px;
+    
+    color: white;
+    margin:15px;
+    margin-left:40px;
+}
+
+textarea {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+footer {
+    background: #30AEB3;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+footer span a {
+    color: #fff;
+    font-weight: 200;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #30AEB3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+input[type='submit'] {
+    border: none;
+    outline: none;
+    align: center;
+    background: #30AEB3;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type='submit']:active {
+    opacity: 0.8;
+}
+
+.container {
+    background: #eee;
+    display: flex;
+}
+
+.middle-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 550px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.post .post-top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post .post-top .dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.post .post-top .dp>img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.post .post-top .post-info {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.post .post-top .post-info .name {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post .post-top .post-info .time {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.post .post-top i {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.post .post-top>input {
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    flex: 1;
+    background: #eee;
+    margin-left: 10px;
+}
+
+.post .post-content {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.post .post-content>img {
+    width: 100%;
+    height: 300px;
+    margin: 5px 0px;
+}
+
+.post .post-bottom {
+    box-shadow: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+
+.post .post-bottom .action {
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.post .post-bottom .action:hover {
+    background: #eee;
+}
+
+.post.create .post-bottom>.action {
+    color: #30AEB3;
+}

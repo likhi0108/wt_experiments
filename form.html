@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+<head>
+<body>
+    <div class = "forms">
+    <form name="registration" method="post" action="db_connec.php">
+    
+    <h2> Registration From</h2>
+    <br>
+    <table align=center border=0 cellspacing="5" cellpadding="5">
+        <tr>
+            <td><label for="uname">UserName:</label></td>
+            <td><input type="text" name="uname" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="gen">Gender:</label></td>
+            <td><input type="radio" name="gen">Male
+                <input type="radio" name="gen">Female</td>
+        </tr>
+        <tr>
+            <td><label for="rel">Religion:</label></td>
+            <td><select name="rel" required>
+                <option >Select</option>
+                <option val="Hindu">Hindu</option>
+                <option val="Muslim">Muslim</option>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">DOB:</label></td>
+            <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+            <td><label for="lang">Languages:</label></td>
+            <td><input type="checkbox" name="lang">Telugu
+                <input type="checkbox" name="lang">English
+                <input type="checkbox" name="lang">Hindi
+            </td>
+        </tr>
+        <tr>
+            <td><label for="add">Address:</label></td>
+            <td><textarea rows=10 cols=20 value="add" name="add"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password:</label></td>
+            <td><input type="password" name="pwd" required></td>
+        </tr>
+        <tr>
+            <td><label for="cpwd">Confirm Password:</label></td>
+            <td><input type="password" name="cpwd" required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="submit" value="submit"></td>
+            <td><input type="reset" name="reset" value="reset"></td>
+        </tr>
+    </table>
+    <ul>
+        <li>fill all the fields</li>
+        <li>T&C Apply</li>
+    </ul>
+    <nav class ="Nav">
+        <a href="#">Help</a>
+        <a href = "#">Home</a>
+    </nav>
+    
+    </div>
+    </form>
+    
+</body>
+</html>
+        
+        
